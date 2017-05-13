@@ -375,7 +375,7 @@ class Referee extends MultiReferee {
 		initScienceProjects();
 
 		// diagnosis
-		initDiagnonisModule();
+		initDiagnosisModule();
 
 		transfers = new LinkedList<>();
 		cloudRequests = new HashMap<>();
@@ -509,7 +509,7 @@ class Referee extends MultiReferee {
 
 	}
 
-	private void initDiagnonisModule() {
+	private void initDiagnosisModule() {
 		for (int i = 0; i < INIT_DIAGNOSED_SAMPLES_BY_LEAGUE_LEVEL[LEAGUE_LEVEL]; i++) {
 			int rank = 0;
 			Sample sample = samplePool.get(rank).pop();
